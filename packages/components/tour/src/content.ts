@@ -64,6 +64,11 @@ export const tourContentProps = buildProps({
 })
 
 export type TourContentProps = ExtractPropTypes<typeof tourContentProps>
+type A = typeof tourContentProps
+type B = A['showArrow']
+type C = ExtractPropTypes<{
+  showArrow: B
+}>
 
 export const tourContentEmits = {
   close: () => true,

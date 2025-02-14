@@ -105,7 +105,8 @@ export const spaceProps = buildProps({
       )
     },
   },
-} as const)
+})
+
 export type SpaceProps = ExtractPropTypes<typeof spaceProps>
 
 const Space = defineComponent({
