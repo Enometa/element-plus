@@ -33,6 +33,7 @@ $checked-icon: "data:image/svg+xml;utf8,%3Csvg class='icon' width='200' height='
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    border-radius: getCssVar('border-radius', 'base');
     color: map.get($select-option, 'text-color');
     height: map.get($select-option, 'height');
     line-height: map.get($select-option, 'height');

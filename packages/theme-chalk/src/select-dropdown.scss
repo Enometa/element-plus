@@ -30,6 +30,7 @@
 }
 
 @include b(select-dropdown__wrap) {
+  padding: 4px;
   max-height: map.get($select-dropdown, 'max-height');
 }
 
