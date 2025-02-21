@@ -2,6 +2,7 @@
   <!-- If you want to apply a custom namespace, uncomment the following and apply the css configuration in `vite.config.ts`. -->
   <!-- <el-config-provider namespace="ep"> -->
   <div class="play-container">
+    <el-input v-model="input" style="width: 240px" placeholder="Please input" />
     <el-icon color="#409EFC">
       <el-icon-check />
     </el-icon>
@@ -16,6 +17,8 @@
 
 <script setup lang="ts">
 // code here
+import { ref } from "vue";
+const input = ref("");
 </script>
 
 <style lang="scss">
